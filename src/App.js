@@ -20,15 +20,15 @@ function App() {
 
     n[index] = "";
 
-    for (var c = 0; c < chars.length; c++) {
+    for (var i = 0; i < chars.length; i++) {
 
-        if (isNaN(parseInt(chars[c])) && chars[c] !== "." && !oplast) {
-            op[index] = chars[c];
+        if (isNaN(parseInt(chars[i])) && chars[i] !== "." && !oplast) {
+            op[index] = chars[i];
             index++;
             n[index] = "";
             oplast = true;
         } else {
-            n[index] += chars[c];
+            n[index] += chars[i];
             oplast = false;
         }
     }
